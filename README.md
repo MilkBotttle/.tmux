@@ -89,7 +89,6 @@ Troubleshooting
 Features
 --------
 
- - `C-a` acts as secondary prefix, while keeping default `C-b` prefix
  - visual theme inspired by [Powerline][]
  - [maximize any pane to a new window with `<prefix> +`][maximize-pane]
  - SSH aware username and hostname status line information
@@ -130,19 +129,19 @@ Bindings
 --------
 
 tmux may be controlled from an attached client by using a key combination of a
-prefix key, followed by a command key. This configuration uses `C-a` as a
-secondary prefix while keeping `C-b` as the default prefix. In the following
-list of key bindings:
+prefix key, followed by a command key. In the following list of key bindings:
+
   - `<prefix>` means you have to either hit <kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>Ctrl</kbd> + <kbd>b</kbd>
   - `<prefix> c` means you have to hit <kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>Ctrl</kbd> + <kbd>b</kbd> followed by <kbd>c</kbd>
   - `<prefix> C-c` means you have to hit <kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>Ctrl</kbd> + <kbd>b</kbd> followed by <kbd>Ctrl</kbd> + <kbd>c</kbd>
+  - M means you have to either hit <kbd>Alt</kbd> or <kbd>Meta</kbd>
+  - M-> means you have to hit <kbd>Alt</kbd> + <kbd>></kbd> or <kbd>Meta</kbd> + <kbd>></kbd>
 
 This configuration uses the following bindings:
 
  - `<prefix> e` opens `~/.tmux.conf.local` with the editor defined by the
    `$EDITOR` environment variable (defaults to `vim` when empty)
  - `<prefix> r` reloads the configuration
- - `C-l` clears both the screen and the tmux history
 
  - `<prefix> C-c` creates a new session
  - `<prefix> C-f` lets you switch to another session by name
@@ -152,11 +151,11 @@ This configuration uses the following bindings:
  - `<prefix> Tab` brings you to the last active window
 
  - `<prefix> -` splits the current pane vertically
- - `<prefix> _` splits the current pane horizontally
+ - `<prefix> |` splits the current pane horizontally
  - `<prefix> h`, `<prefix> j`, `<prefix> k` and `<prefix> l` let you navigate
    panes ala Vim
  - `<prefix> H`, `<prefix> J`, `<prefix> K`, `<prefix> L` let you resize panes
- - `<prefix> <` and `<prefix> >` let you swap panes
+ - `M-<` and `M->` let you swap panes
  - `<prefix> +` maximizes the current pane to a new window
 
  - `<prefix> m` toggles mouse mode on or off
@@ -164,10 +163,8 @@ This configuration uses the following bindings:
  - `<prefix> U` launches Urlview (if available)
  - `<prefix> F` launches Facebook PathPicker (if available)
 
- - `<prefix> Enter` enters copy-mode
- - `<prefix> b` lists the paste-buffers
- - `<prefix> p` pastes from the top paste-buffer
  - `<prefix> P` lets you choose the paste-buffer to paste from
+ - `<prefix> S` toggles synchronize-panes on or off
 
 Additionally, `copy-mode-vi` matches [my own Vim configuration][]
 
