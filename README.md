@@ -134,8 +134,8 @@ prefix key, followed by a command key. In the following list of key bindings:
   - `<prefix>` means you have to either hit <kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>Ctrl</kbd> + <kbd>b</kbd>
   - `<prefix> c` means you have to hit <kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>Ctrl</kbd> + <kbd>b</kbd> followed by <kbd>c</kbd>
   - `<prefix> C-c` means you have to hit <kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>Ctrl</kbd> + <kbd>b</kbd> followed by <kbd>Ctrl</kbd> + <kbd>c</kbd>
-  - M means you have to either hit <kbd>Alt</kbd> or <kbd>Meta</kbd>
-  - M-> means you have to hit <kbd>Alt</kbd> + <kbd>></kbd> or <kbd>Meta</kbd> + <kbd>></kbd>
+  - `M` means you have to either hit <kbd>Alt</kbd> or <kbd>Meta</kbd>
+  - `M->` means you have to hit <kbd>Alt</kbd> + <kbd>></kbd> or <kbd>Meta</kbd> + <kbd>></kbd>
 
 This configuration uses the following bindings:
 
