@@ -241,12 +241,15 @@ tmux_conf_theme_clock_style='24'
 # on Linux, this requires xsel or xclip
 tmux_conf_copy_to_os_clipboard=false
 
+# copy mode key bind
+bind-key -t emacs-copy 'Space' begin-selection
+bind-key -t emacs-copy 'Enter' copy-selection
 
 # -- user customizations -------------------------------------------------------
 # this is the place to override or undo settings
 
 # increase history size
-#set -g history-limit 10000
+set -g history-limit 10000
 
 # start with mouse mode enabled
 #set -g mouse on
@@ -256,12 +259,15 @@ tmux_conf_copy_to_os_clipboard=false
 #set -g status-keys vi
 #set -g mode-keys vi
 
-# replace C-b by C-a instead of using both prefixes
-# set -gu prefix2
-# unbind C-a
-# unbind C-b
-# set -g prefix C-a
-# bind C-a send-prefix
+# unbind C-a for prefix2 overwrite tmux.conf
+set -gu prefix2
+unbind C-a
+unbind C-b
+set -g prefix C-b
+bind C-b send-prefix
 
 # move status line to top
 #set -g status-position top
+
+
+
